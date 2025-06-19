@@ -1,11 +1,21 @@
-const customerName = "Lucas";
-const customerCPF = 9999999999;
-const customerAgency = 1001;
-const customerBalance = 0;
+class Customer {
+    name;
+    cpf;
+    agency;
+    balance;
+}
 
-const customer1Name = "Lucas";
-const customer1CPF = 9999999999;
-const customer1Agency = 1001;
-const customer1Balance = 0;
+const customer = new Customer();
+const customer1 = new Customer();
 
-console.log(customerName);
+customer.name = "Lucas";
+customer.cpf = 9999999999;
+customer.agency = 1001;
+customer.balance = 0;
+
+customer1.name = "Rayssa";
+customer1.cpf = 88888888888;
+customer1.agency = 1001;
+customer1.balance = 0;
+
+console.log(customer, customer1);
